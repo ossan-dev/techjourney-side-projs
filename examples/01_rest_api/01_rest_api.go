@@ -22,6 +22,7 @@ func main() {
 	r := http.NewServeMux()
 
 	r.HandleFunc("/example", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Println("/example route was hit...")
 		_ = r
 		w.Write([]byte(fmt.Sprintln("this is a demo endpoint")))
 	})
