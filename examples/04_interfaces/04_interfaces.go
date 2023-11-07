@@ -14,7 +14,7 @@ type circle struct {
 }
 
 type rect struct {
-	width, height float64
+	Width, Height float64
 }
 
 func (c circle) area() float64 {
@@ -40,6 +40,10 @@ func main() {
 	// shape = rect{width: 2.5, height: 4.5}
 
 	var c2 geometry
+	_ = c2
 	c2 = circle{radius: 25.70}
 	measure(c2)
+
+	r1 := rect{}
+	_ = r1
 }
